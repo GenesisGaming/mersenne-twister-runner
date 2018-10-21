@@ -24,4 +24,6 @@ note: the compiled binary file is target/mersenne-twister-runner.jar
 ```
 
 example:
-`java -jar mersenne-twister-runner.jar 100
+```
+java -jar target/mersenne-twister-runner.jar 100 100 ~/random.txt
+```
