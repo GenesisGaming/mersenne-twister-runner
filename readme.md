@@ -1,9 +1,13 @@
 *Checkout:*
-`git@github.com:GenesisGaming/mersenne-twister-runner.git`
+```
+git@github.com:GenesisGaming/mersenne-twister-runner.git
+```
 
 *Build:*
-`mvn clean package`
-the compiled binary file is target/mersenne-twister-runner.jar
+```
+mvn clean package
+```
+note: the compiled binary file is target/mersenne-twister-runner.jar
 
 
 *Usage:*
