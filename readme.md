@@ -1,4 +1,5 @@
 *About*:
+
 This project demonstrates a crytpraphically strong RNG by combining Mersenne Twister with entropy and hashing.
 
 java.security.SecureRandom is utilized to gather entropy and generated seeds. The generated seeds are then hashed using it as a seed for the underlying Mersenne Twister instance.
