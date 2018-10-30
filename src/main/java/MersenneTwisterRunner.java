@@ -1,9 +1,6 @@
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
-
-import org.apache.commons.math3.random.MersenneTwister;
-
 public class MersenneTwisterRunner {
     public static void main(String[] args) throws IOException {
         if (args.length != 3) {
@@ -33,9 +30,9 @@ public class MersenneTwisterRunner {
         String filename = args[2];
         FileWriter out = new FileWriter(filename, true);
         BufferedWriter writer = new BufferedWriter(out);
-        MersenneTwister rng = new MersenneTwister();
+        RandomNumberGenerator rng = new RandomNumberGenerator();
         for (int i = 0; i < loop; i++) {
-            int random = rng.nextInt(max);
+            int random = rng.nextInt(0, max);
             writer.append(Integer.toString(random));
             writer.append("\n");
         }
